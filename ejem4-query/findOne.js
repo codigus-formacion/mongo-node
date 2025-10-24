@@ -6,7 +6,7 @@ const db = client.db('cinema');
 const customers = db.collection('customers');
 
 
-let customer = {
+let newCustomer = {
     name: "Pepe Pérez",
     age: 37,
     country: 'Spain'
@@ -14,14 +14,14 @@ let customer = {
 
 await customers.deleteMany();
 
-let result = await customers.insertOne(customer);
+let result = await customers.insertOne(newCustomer);
 
-let idAsString = result.insertedId.toString();
+let id = result.insertedId.toString();
 
-console.log(idAsString);
+console.log(id);
 
-let customerFromMongo = await customers.findOne({ _id: new ObjectId(idAsString) });
+let customer = await customers.findOne({ _id: new ObjectId(id) });
 
-console.log(customerFromMongo);
+console.log(customer);
 
 client.close();

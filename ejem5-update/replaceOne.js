@@ -16,9 +16,9 @@ await customers.deleteMany();
 
 let result = await customers.insertOne(customer);
 
-let idAsString = result.insertedId.toString();
+let id = result.insertedId.toString();
 
-console.log(idAsString);
+console.log(id);
 
 let newCustomer = {
     name: "Pepito Perezito",
@@ -26,12 +26,12 @@ let newCustomer = {
     country: 'Spanistan'
 }
 
-let updateResult = await customers.replaceOne({ _id: new ObjectId(idAsString) }, newCustomer);
+let replaceResult = await customers.replaceOne({ _id: new ObjectId(id) }, newCustomer);
 
-if(updateResult.matchedCount == 0){
-    console.log(`No document found with id ${idAsString}`);
+if(replaceResult.matchedCount == 0){
+    console.log(`No document found with id ${id}`);
 } else {
-    if(updateResult.modifiedCount == 0){
+    if(replaceResult.modifiedCount == 0){
         console.log(`No document modified`);
     } else {
         console.log(`Document updated`);

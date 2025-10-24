@@ -16,16 +16,16 @@ await customers.deleteMany();
 
 let result = await customers.insertOne(customer);
 
-let idAsString = result.insertedId.toString();
+let id = result.insertedId.toString();
 
-console.log(idAsString);
+console.log(id);
 
 //https://www.mongodb.com/docs/drivers/node/current/crud/delete/
 
-let deleteResult = await customers.deleteOne({ _id: new ObjectId(idAsString) });
+let deleteResult = await customers.deleteOne({ _id: new ObjectId(id) });
 
 if(deleteResult.deletedCount == 0){
-    console.log(`No document found with id ${idAsString}`);
+    console.log(`No document found with id ${id}`);
 } else {
     console.log(`Document deleted`);
 }

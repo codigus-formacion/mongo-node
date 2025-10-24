@@ -55,6 +55,15 @@ async function findAll(){
     await showResult('All:', result);
 }
 
+async function findByAge15(){
+
+    //https://www.mongodb.com/docs/drivers/node/current/crud/query/query-document/#comparison-operators
+    
+    const result = customers.find({ age: 15});
+    
+    await showResult('Age 15:', result);
+}
+
 async function findByAgeLessThan18(){
 
     //https://www.mongodb.com/docs/drivers/node/current/crud/query/query-document/#comparison-operators
@@ -77,10 +86,10 @@ async function findByGenderFemaleOrCountrySpain(){
 
     //https://www.mongodb.com/docs/drivers/node/current/crud/query/query-document/#logical-operators
     
-    const result = customers.find({ $or: [
-        { gender: 'female' }, 
-        { country: 'Spain' }
-    ]});
+        const result = customers.find({ $or: [
+            { gender: 'female' }, 
+            { country: 'Spain' }
+        ]});
     
     await showResult('Gender "female" or country "Spain":', result);
 }
@@ -97,6 +106,7 @@ async function findByRegexName(){
 // Main script
 
 await findAll();
+await findByAge15();
 await findByAgeLessThan18();
 await findByAgeGreaterOrEqualsTo18AndCountrySpain();
 await findByGenderFemaleOrCountrySpain();

@@ -51,7 +51,10 @@ async function findTextSearch(){
     
     //https://www.mongodb.com/docs/drivers/node/current/crud/query/text/
 
-    const result = customers.find({ $text: { $search: "ramo" } });
+    let searchBar = "ramo";
+    
+    const result = customers.find({ $text: { $search: searchBar } })
+        .sort({ score: { $meta: "textScore" } });
     
     await showResult('All:', result);
 }

@@ -16,14 +16,14 @@ await customers.deleteMany();
 
 let result = await customers.insertOne(customer);
 
-let idAsString = result.insertedId.toString();
+let id = result.insertedId.toString();
 
-console.log(idAsString);
+console.log(id);
 
-let updateResult = await customers.updateOne({ _id: new ObjectId(idAsString) }, { $set: { age: 40 }});
+let updateResult = await customers.updateOne({ _id: new ObjectId(id) }, { $set: { age: 40 }});
 
 if(updateResult.matchedCount == 0){
-    console.log(`No document found with id ${idAsString}`);
+    console.log(`No document found with id ${id}`);
 } else {
     if(updateResult.modifiedCount == 0){
         console.log(`No document modified`);

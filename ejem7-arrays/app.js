@@ -9,7 +9,9 @@ await users.deleteMany();
 
 const newUser = {
     name: "Juan",
-    tasks: []
+    tasks: [
+        { _id: new ObjectId(), title: "Learn JavaScript", done: true }
+    ]
 }
 
 // Step 1 - Insert new user
@@ -18,14 +20,15 @@ let result = await users.insertOne(newUser);
 
 let userId = result.insertedId.toString();
 
-console.log(`User created with id ${userId}`);
+console.log(`User created with id ${newUser._id}`);
+console.log(`Task created with id ${newUser.tasks[0].id}`);
+console.log(newUser);
 
-// Step 2 - Insert tasks in the user task field (array)
+// Step 2 - Insert more tasks in the task array
 
 const newTasks = [
-    { id: new ObjectId(), title: "Learn JavaScript", done: true },
-    { id: new ObjectId(), title: "Learn MongoDB", done: false },
-    { id: new ObjectId(), title: "Learn Express", done: false }
+    { _id: new ObjectId(), title: "Learn MongoDB", done: false },
+    { _id: new ObjectId(), title: "Learn Express", done: false }
 ];
 
 for (let i = 0; i < newTasks.length; i++) {
@@ -37,41 +40,60 @@ for (let i = 0; i < newTasks.length; i++) {
         { $push: { tasks: newTask } }
     );
 
-    console.log(`Task inserted with id ${newTask.id}`);
+    console.log(`Task inserted with id ${newTask._id}`);
 }
+
+let user = await users.findOne({ _id: new ObjectId(userId) });
+console.log('Updated user');
+console.log(user);
+
+let javaScriptTaskId = user.tasks[0]._id.toString();
+let mongoTaskId = user.tasks[1]._id.toString();
+let expressTaskId = user.tasks[2]._id.toString();
 
 // Step 3 - Set a specific task to done: true;
 
-let mongoTaskId = newTasks[1].id.toString();
-
 await users.updateOne(
-    { _id: new ObjectId(userId) },
-    {
-        $set: {
-            "tasks.$[task].done": true
-        }
-    },
-    {
-        arrayFilters: [{ "task.id": new ObjectId(mongoTaskId) }]
-    }
+    { _id: new ObjectId(userId), "tasks._id": new ObjectId(mongoTaskId) },
+    {  $set: { "tasks.$.done": true } }
 );
 console.log(`Updated task: ${mongoTaskId}`);
 
-// Step 4 - Remove a specific task
+// Step 4 - Replace a task
 
-let expressTaskId = newTasks[2].id.toString();
+let newTask = { _id: javaScriptTaskId, title: "Learn Pascal", done: true };
+
+await users.updateOne(
+    { _id: new ObjectId(userId), "tasks._id": new ObjectId(javaScriptTaskId) },
+    {  $set: { "tasks.$": newTask } }
+);
+console.log(`Replaced task: ${javaScriptTaskId}`);
+
+// Step 5 - Find a specific task
+
+const userWithTask = await users.findOne(
+    { _id: new ObjectId(userId) },
+    { projection: { tasks: { $elemMatch: { _id: new ObjectId(mongoTaskId) } } } }
+);
+
+let mongoTask = userWithTask.tasks[0];
+
+console.log('Mongo task: ');
+console.log(mongoTask);
+
+// Step 6 - Remove a specific task
 
 await users.updateOne(
     { _id: new ObjectId(userId) },
-    { $pull: { tasks: { id: new ObjectId(expressTaskId) } } }
+    { $pull: { tasks: { _id: new ObjectId(expressTaskId) } } }
 );
 console.log(`Deleted task: ${expressTaskId}`);
 
-// Step 5 - Show final user
+// Step 7 - Show final user
 
-const finalUser = await users.findOne({ _id: new ObjectId(userId) });
+user = await users.findOne({ _id: new ObjectId(userId) });
 
-console.log("Usuario final:");
-console.log(finalUser);
+console.log("Updated user:");
+console.log(user);
 
 await client.close();
