@@ -39,9 +39,9 @@ await customers.insertMany(customersData);
 //https://www.mongodb.com/docs/manual/tutorial/project-fields-from-query-results/
 
 //Load only name property
-const resultCursor = customers.find().project({ _id: 0, name: 1});
+const result = customers.find().project({ _id: 0, name: 1});
 
-for await (const doc of resultCursor) {
+for await (const doc of result) {
     console.log(doc);
 }
 
