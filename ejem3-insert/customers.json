@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Alice Johnson",
+    "phone": "+1-202-555-0136",
+    "city": "New York",
+    "email": "alice.johnson@example.com"
+  },
+  {
+    "name": "Michael Smith",
+    "phone": "+1-415-555-0298",
+    "city": "San Francisco",
+    "email": "michael.smith@example.com"
+  },
+  {
+    "name": "Sofia Martinez",
+    "phone": "+1-305-555-0184",
+    "city": "Miami",
+    "email": "sofia.martinez@example.com"
+  },
+  {
+    "name": "Liam Brown",
+    "phone": "+1-312-555-0472",
+    "city": "Chicago",
+    "email": "liam.brown@example.com"
+  },
+  {
+    "name": "Emily Davis",
+    "phone": "+1-206-555-0259",
+    "city": "Seattle",
+    "email": "emily.davis@example.com"
+  },
+  {
+    "name": "Noah Wilson",
+    "phone": "+1-617-555-0333",
+    "city": "Boston",
+    "email": "noah.wilson@example.com"
+  },
+  {
+    "name": "Olivia Garcia",
+    "phone": "+1-512-555-0411",
+    "city": "Austin",
+    "email": "olivia.garcia@example.com"
+  },
+  {
+    "name": "James Anderson",
+    "phone": "+1-702-555-0277",
+    "city": "Las Vegas",
+    "email": "james.anderson@example.com"
+  },
+  {
+    "name": "Ava Thompson",
+    "phone": "+1-213-555-0124",
+    "city": "Los Angeles",
+    "email": "ava.thompson@example.com"
+  },
+  {
+    "name": "Ethan Lee",
+    "phone": "+1-303-555-0395",
+    "city": "Denver",
+    "email": "ethan.lee@example.com"
+  }
+]
