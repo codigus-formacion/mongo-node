@@ -1,0 +1,416 @@
+[
+  {
+    "title": "The Godfather",
+    "year": 1972,
+    "genre": ["Crime", "Drama"],
+    "actors": ["Marlon Brando", "Al Pacino", "James Caan"]
+  },
+  {
+    "title": "Citizen Kane",
+    "year": 1941,
+    "genre": ["Drama", "Mystery"],
+    "actors": ["Orson Welles", "Joseph Cotten", "Dorothy Comingore"]
+  },
+  {
+    "title": "Casablanca",
+    "year": 1942,
+    "genre": ["Romance", "Drama", "War"],
+    "actors": ["Humphrey Bogart", "Ingrid Bergman", "Paul Henreid"]
+  },
+  {
+    "title": "Schindler's List",
+    "year": 1993,
+    "genre": ["Biography", "Drama", "History"],
+    "actors": ["Liam Neeson", "Ben Kingsley", "Ralph Fiennes"]
+  },
+  {
+    "title": "Pulp Fiction",
+    "year": 1994,
+    "genre": ["Crime", "Drama"],
+    "actors": ["John Travolta", "Samuel L. Jackson", "Uma Thurman"]
+  },
+  {
+    "title": "The Shawshank Redemption",
+    "year": 1994,
+    "genre": ["Drama"],
+    "actors": ["Tim Robbins", "Morgan Freeman", "Bob Gunton"]
+  },
+  {
+    "title": "The Dark Knight",
+    "year": 2008,
+    "genre": ["Action", "Crime", "Drama"],
+    "actors": ["Christian Bale", "Heath Ledger", "Aaron Eckhart"]
+  },
+  {
+    "title": "Forrest Gump",
+    "year": 1994,
+    "genre": ["Drama", "Romance"],
+    "actors": ["Tom Hanks", "Robin Wright", "Gary Sinise"]
+  },
+  {
+    "title": "Star Wars: Episode IV - A New Hope",
+    "year": 1977,
+    "genre": ["Adventure", "Sci-Fi"],
+    "actors": ["Mark Hamill", "Harrison Ford", "Carrie Fisher"]
+  },
+  {
+    "title": "Gone with the Wind",
+    "year": 1939,
+    "genre": ["Drama", "Romance", "War"],
+    "actors": ["Clark Gable", "Vivien Leigh", "Leslie Howard"]
+  },
+  {
+    "title": "The Wizard of Oz",
+    "year": 1939,
+    "genre": ["Adventure", "Family", "Fantasy"],
+    "actors": ["Judy Garland", "Frank Morgan", "Ray Bolger"]
+  },
+  {
+    "title": "Titanic",
+    "year": 1997,
+    "genre": ["Drama", "Romance"],
+    "actors": ["Leonardo DiCaprio", "Kate Winslet", "Billy Zane"]
+  },
+  {
+    "title": "Jurassic Park",
+    "year": 1993,
+    "genre": ["Adventure", "Sci-Fi"],
+    "actors": ["Sam Neill", "Laura Dern", "Jeff Goldblum"]
+  },
+  {
+    "title": "Jaws",
+    "year": 1975,
+    "genre": ["Adventure", "Thriller"],
+    "actors": ["Roy Scheider", "Robert Shaw", "Richard Dreyfuss"]
+  },
+  {
+    "title": "E.T. the Extra-Terrestrial",
+    "year": 1982,
+    "genre": ["Family", "Sci-Fi"],
+    "actors": ["Henry Thomas", "Drew Barrymore", "Peter Coyote"]
+  },
+  {
+    "title": "The Silence of the Lambs",
+    "year": 1991,
+    "genre": ["Crime", "Thriller"],
+    "actors": ["Jodie Foster", "Anthony Hopkins", "Scott Glenn"]
+  },
+  {
+    "title": "The Lord of the Rings: The Fellowship of the Ring",
+    "year": 2001,
+    "genre": ["Adventure", "Fantasy"],
+    "actors": ["Elijah Wood", "Ian McKellen", "Viggo Mortensen"]
+  },
+  {
+    "title": "The Matrix",
+    "year": 1999,
+    "genre": ["Action", "Sci-Fi"],
+    "actors": ["Keanu Reeves", "Laurence Fishburne", "Carrie-Anne Moss"]
+  },
+  {
+    "title": "Inception",
+    "year": 2010,
+    "genre": ["Action", "Sci-Fi", "Thriller"],
+    "actors": ["Leonardo DiCaprio", "Joseph Gordon-Levitt", "Elliot Page"]
+  },
+  {
+    "title": "Back to the Future",
+    "year": 1985,
+    "genre": ["Adventure", "Comedy", "Sci-Fi"],
+    "actors": ["Michael J. Fox", "Christopher Lloyd", "Lea Thompson"]
+  },
+  {
+    "title": "Avatar",
+    "year": 2009,
+    "genre": ["Action", "Adventure", "Sci-Fi"],
+    "actors": ["Sam Worthington", "Zoe Saldana", "Sigourney Weaver"]
+  },
+  {
+    "title": "The Sound of Music",
+    "year": 1965,
+    "genre": ["Biography", "Drama", "Musical"],
+    "actors": ["Julie Andrews", "Christopher Plummer", "Eleanor Parker"]
+  },
+  {
+    "title": "Rocky",
+    "year": 1976,
+    "genre": ["Drama", "Sport"],
+    "actors": ["Sylvester Stallone", "Talia Shire", "Burt Young"]
+  },
+  {
+    "title": "Gladiator",
+    "year": 2000,
+    "genre": ["Action", "Adventure", "Drama"],
+    "actors": ["Russell Crowe", "Joaquin Phoenix", "Connie Nielsen"]
+  },
+  {
+    "title": "Goodfellas",
+    "year": 1990,
+    "genre": ["Biography", "Crime", "Drama"],
+    "actors": ["Robert De Niro", "Ray Liotta", "Joe Pesci"]
+  },
+  {
+    "title": "Apocalypse Now",
+    "year": 1979,
+    "genre": ["Drama", "War"],
+    "actors": ["Martin Sheen", "Marlon Brando", "Robert Duvall"]
+  },
+  {
+    "title": "The Terminator",
+    "year": 1984,
+    "genre": ["Action", "Sci-Fi"],
+    "actors": ["Arnold Schwarzenegger", "Linda Hamilton", "Michael Biehn"]
+  },
+  {
+    "title": "Blade Runner",
+    "year": 1982,
+    "genre": ["Sci-Fi", "Thriller"],
+    "actors": ["Harrison Ford", "Rutger Hauer", "Sean Young"]
+  },
+  {
+    "title": "Saving Private Ryan",
+    "year": 1998,
+    "genre": ["Drama", "War"],
+    "actors": ["Tom Hanks", "Matt Damon", "Tom Sizemore"]
+  },
+  {
+    "title": "Braveheart",
+    "year": 1995,
+    "genre": ["Biography", "Drama", "History"],
+    "actors": ["Mel Gibson", "Sophie Marceau", "Patrick McGoohan"]
+  },
+  {
+    "title": "The Green Mile",
+    "year": 1999,
+    "genre": ["Crime", "Drama", "Fantasy"],
+    "actors": ["Tom Hanks", "Michael Clarke Duncan", "David Morse"]
+  },
+  {
+    "title": "Fight Club",
+    "year": 1999,
+    "genre": ["Drama"],
+    "actors": ["Brad Pitt", "Edward Norton", "Helena Bonham Carter"]
+  },
+  {
+    "title": "Se7en",
+    "year": 1995,
+    "genre": ["Crime", "Drama", "Mystery"],
+    "actors": ["Brad Pitt", "Morgan Freeman", "Kevin Spacey"]
+  },
+  {
+    "title": "The Departed",
+    "year": 2006,
+    "genre": ["Crime", "Drama", "Thriller"],
+    "actors": ["Leonardo DiCaprio", "Matt Damon", "Jack Nicholson"]
+  },
+  {
+    "title": "Whiplash",
+    "year": 2014,
+    "genre": ["Drama", "Music"],
+    "actors": ["Miles Teller", "J.K. Simmons", "Melissa Benoist"]
+  },
+  {
+    "title": "Interstellar",
+    "year": 2014,
+    "genre": ["Adventure", "Drama", "Sci-Fi"],
+    "actors": ["Matthew McConaughey", "Anne Hathaway", "Jessica Chastain"]
+  },
+  {
+    "title": "The Lion King",
+    "year": 1994,
+    "genre": ["Animation", "Adventure", "Drama"],
+    "actors": ["Matthew Broderick", "Jeremy Irons", "James Earl Jones"]
+  },
+  {
+    "title": "Toy Story",
+    "year": 1995,
+    "genre": ["Animation", "Adventure", "Comedy"],
+    "actors": ["Tom Hanks", "Tim Allen", "Don Rickles"]
+  },
+  {
+    "title": "The Pianist",
+    "year": 2002,
+    "genre": ["Biography", "Drama", "Music"],
+    "actors": ["Adrien Brody", "Thomas Kretschmann", "Frank Finlay"]
+  },
+  {
+    "title": "The Prestige",
+    "year": 2006,
+    "genre": ["Drama", "Mystery", "Sci-Fi"],
+    "actors": ["Christian Bale", "Hugh Jackman", "Scarlett Johansson"]
+  },
+  {
+    "title": "American Beauty",
+    "year": 1999,
+    "genre": ["Drama"],
+    "actors": ["Kevin Spacey", "Annette Bening", "Thora Birch"]
+  },
+  {
+    "title": "The Social Network",
+    "year": 2010,
+    "genre": ["Biography", "Drama"],
+    "actors": ["Jesse Eisenberg", "Andrew Garfield", "Justin Timberlake"]
+  },
+  {
+    "title": "12 Angry Men",
+    "year": 1957,
+    "genre": ["Crime", "Drama"],
+    "actors": ["Henry Fonda", "Lee J. Cobb", "Martin Balsam"]
+  },
+  {
+    "title": "Psycho",
+    "year": 1960,
+    "genre": ["Horror", "Mystery", "Thriller"],
+    "actors": ["Anthony Perkins", "Janet Leigh", "Vera Miles"]
+  },
+  {
+    "title": "Vertigo",
+    "year": 1958,
+    "genre": ["Mystery", "Romance", "Thriller"],
+    "actors": ["James Stewart", "Kim Novak", "Barbara Bel Geddes"]
+  },
+  {
+    "title": "A Clockwork Orange",
+    "year": 1971,
+    "genre": ["Crime", "Sci-Fi"],
+    "actors": ["Malcolm McDowell", "Patrick Magee", "Adrienne Corri"]
+  },
+  {
+    "title": "The Shining",
+    "year": 1980,
+    "genre": ["Drama", "Horror"],
+    "actors": ["Jack Nicholson", "Shelley Duvall", "Danny Lloyd"]
+  },
+  {
+    "title": "Amélie",
+    "year": 2001,
+    "genre": ["Comedy", "Romance"],
+    "actors": ["Audrey Tautou", "Mathieu Kassovitz", "Rufus"]
+  },
+  {
+    "title": "La La Land",
+    "year": 2016,
+    "genre": ["Comedy", "Drama", "Music"],
+    "actors": ["Ryan Gosling", "Emma Stone", "John Legend"]
+  },
+  {
+    "title": "Parasite",
+    "year": 2019,
+    "genre": ["Comedy", "Drama", "Thriller"],
+    "actors": ["Song Kang-ho", "Lee Sun-kyun", "Cho Yeo-jeong"]
+  },
+  {
+    "title": "Love Actually",
+    "year": 2003,
+    "genre": ["Comedy", "Drama", "Romance"],
+    "actors": ["Hugh Grant", "Keira Knightley", "Colin Firth"]
+  },
+  {
+    "title": "Shakespeare in Love",
+    "year": 1998,
+    "genre": ["Comedy", "Drama", "Romance"],
+    "actors": ["Gwyneth Paltrow", "Joseph Fiennes", "Geoffrey Rush"]
+  },
+  {
+    "title": "Crazy, Stupid, Love",
+    "year": 2011,
+    "genre": ["Comedy", "Drama", "Romance"],
+    "actors": ["Steve Carell", "Ryan Gosling", "Emma Stone"]
+  },
+  {
+    "title": "Love Story",
+    "year": 1970,
+    "genre": ["Drama", "Romance"],
+    "actors": ["Ali MacGraw", "Ryan O'Neal", "John Marley"]
+  },
+  {
+    "title": "From Russia with Love",
+    "year": 1963,
+    "genre": ["Action", "Adventure", "Thriller"],
+    "actors": ["Sean Connery", "Daniela Bianchi", "Pedro Armendáriz"]
+  },
+  {
+    "title": "Punch-Drunk Love",
+    "year": 2002,
+    "genre": ["Comedy", "Drama", "Romance"],
+    "actors": ["Adam Sandler", "Emily Watson", "Philip Seymour Hoffman"]
+  },
+  {
+    "title": "Love & Other Drugs",
+    "year": 2010,
+    "genre": ["Comedy", "Drama", "Romance"],
+    "actors": ["Jake Gyllenhaal", "Anne Hathaway", "Oliver Platt"]
+  },
+  {
+    "title": "The Love Witch",
+    "year": 2016,
+    "genre": ["Comedy", "Horror", "Romance"],
+    "actors": ["Samantha Robinson", "Jeffrey Vincent Parise", "Laura Waddell"]
+  },
+  {
+    "title": "Love and Death",
+    "year": 1975,
+    "genre": ["Comedy", "Romance", "War"],
+    "actors": ["Woody Allen", "Diane Keaton", "Georges Adet"]
+  },
+  {
+    "title": "Love, Simon",
+    "year": 2018,
+    "genre": ["Comedy", "Drama", "Romance"],
+    "actors": ["Nick Robinson", "Jennifer Garner", "Josh Duhamel"]
+  },
+  {
+    "title": "Star Wars: Episode I - The Phantom Menace",
+    "year": 1999,
+    "genre": ["Action", "Adventure", "Fantasy"],
+    "actors": ["Liam Neeson", "Ewan McGregor", "Natalie Portman"]
+  },
+  {
+    "title": "Star Wars: Episode II - Attack of the Clones",
+    "year": 2002,
+    "genre": ["Action", "Adventure", "Fantasy"],
+    "actors": ["Ewan McGregor", "Natalie Portman", "Hayden Christensen"]
+  },
+  {
+    "title": "Star Wars: Episode III - Revenge of the Sith",
+    "year": 2005,
+    "genre": ["Action", "Adventure", "Fantasy"],
+    "actors": ["Ewan McGregor", "Natalie Portman", "Hayden Christensen"]
+  },
+  {
+    "title": "Star Wars: Episode IV - A New Hope",
+    "year": 1977,
+    "genre": ["Action", "Adventure", "Fantasy"],
+    "actors": ["Mark Hamill", "Harrison Ford", "Carrie Fisher"]
+  },
+  {
+    "title": "Star Wars: Episode V - The Empire Strikes Back",
+    "year": 1980,
+    "genre": ["Action", "Adventure", "Fantasy"],
+    "actors": ["Mark Hamill", "Harrison Ford", "Carrie Fisher"]
+  },
+  {
+    "title": "Star Wars: Episode VI - Return of the Jedi",
+    "year": 1983,
+    "genre": ["Action", "Adventure", "Fantasy"],
+    "actors": ["Mark Hamill", "Harrison Ford", "Carrie Fisher"]
+  },
+  {
+    "title": "Star Wars: Episode VII - The Force Awakens",
+    "year": 2015,
+    "genre": ["Action", "Adventure", "Sci-Fi"],
+    "actors": ["Daisy Ridley", "John Boyega", "Harrison Ford"]
+  },
+  {
+    "title": "Star Wars: Episode VIII - The Last Jedi",
+    "year": 2017,
+    "genre": ["Action", "Adventure", "Sci-Fi"],
+    "actors": ["Mark Hamill", "Carrie Fisher", "Adam Driver"]
+  },
+  {
+    "title": "Star Wars: Episode IX - The Rise of Skywalker",
+    "year": 2019,
+    "genre": ["Action", "Adventure", "Sci-Fi"],
+    "actors": ["Daisy Ridley", "Adam Driver", "Oscar Isaac"]
+  }
+]
