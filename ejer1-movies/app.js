@@ -1,5 +1,5 @@
 import { MongoClient } from 'mongodb';
-import { readFile } from 'fs/promises';
+import { readFile } from 'node:fs/promises';
 
 const client = new MongoClient('mongodb://localhost:27017');
 const db = client.db('cinema');
